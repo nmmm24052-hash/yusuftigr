@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+    <header class="w-[90%] lg:max-w-7xl m-auto">
+        <nav class="flex justify-between items-center py-3">
+            <img src="./R1/1.png" alt="" class="w-[161px] h-[50px]">
+            <ul class="text-black text-sm font-bold hidden lg:flex gap-10 items-center">
+                <li>Homepage <i class="fa-solid fa-angle-down ml-1"></i></li>
+                <li>Recipe Page <i class="fa-solid fa-angle-down ml-1"></i></li>
+                <li>Pages <i class="fa-solid fa-angle-down ml-1"></i></li>
+                <li>Buy</li>
+            </ul>
+            <div class="flex gap-10 items-center">
+                <i class="fa-solid fa-search"></i>
+                <img src="./R1/2.png" alt="" class="w-[32px] h-[32px]">
+                <i class="fa-solid fa-bars block lg:hidden"></i>
+            </div>
+        </nav>
+
+        <section class="max-w-4xl mx-auto p-6 ">
+            <header class="flex items-center justify-between mb-6 border-b-[1px] pb-5 border-[#D8D8D8]">
+                <h1 class="text-2xl font-semibold">Profile</h1>
+                <button class="bg-orange-500 text-white px-4 py-2 rounded">Save</button>
+            </header>
+
+            <form class="space-y-8">
+                <div class="flex lg:flex-col flex-row lg:items-start items-center gap-5">
+                    <img src="./R1/3.png" alt="Profile Photo" class="lg:w-24 lg:h-24 w-12 h-12 rounded-full object-cover">
+                    <div class="flex space-x-4 mt-4 md:mt-0 items-center">
+                        <button type="button" class="bg-orange-500 text-white px-4 py-2 rounded">Change photo</button>
+                        <button type="button" class="border border-gray-400 px-4 py-2 rounded">Delete</button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="full-name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                        <input id="full-name" name="full-name" type="text" placeholder="Suzan M"
+                            class="mt-1 block w-full border-b border-gray-400 focus:outline-none focus:border-black bg-transparent">
+                    </div>
+
+                    <div>
+                        <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+                        <div class="flex items-center mt-1 border-b border-gray-200">
+                            <span class="text-gray-500 mr-1">@</span>
+                            <input id="username" name="username" type="text" value="Miller" disabled
+                                class="w-full bg-transparent focus:outline-none text-gray-400">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <div class="flex items-center mt-1 border-b border-gray-200 ">
+                            <i class="fa-regular fa-envelope w-5 h-5 text-gray-500 mt-2"></i>
+                            <input id="email" name="email" type="email" value="suzan@gmail.com"
+                                class="w-full bg-transparent focus:outline-none text-gray-700">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                        <div class="flex items-center mt-1 border-b border-gray-200">
+                            <i class="fa-solid fa-lock w-5 h-5 text-gray-500 mt-2"></i>
+                            <input id="password" name="password" type="password" value="••••••"
+                                class="w-full bg-transparent focus:outline-none text-gray-700">
+                        </div>
+                        <h1 class="text-sm text-orange-500 mt-1 text-right">Change</h1>
+                    </div>
+                </div>
+
+                <section>
+                    <h2 class="text-lg font-medium mb-4">Connected Accounts</h2>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between items-center">
+                            <div class="flex items-center flex-col">
+                                <img src="./R1/4.png" alt="Facebook" class="h-5">
+                                <span class="text-gray-700">Suzan Miller</span>
+                            </div>
+                            <button class="text-sm text-gray-500">Disconnect</button>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <div class="flex items-center flex-col">
+                                <img src="./R1/5.png" alt="Google" class="w-24 h-[33px]">
+                                <span class="text-gray-700">Suzan@gmail.com</span>
+                            </div>
+                            <button class="text-sm text-gray-500">Disconnect</button>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2 class="text-lg font-medium mt-6 mb-2">Newsletter</h2>
+                    <div class="flex justify-between lg:items-center items-start flex-col lg:flex-row">
+                        <p class="text-sm text-gray-600 mb-2">You are currently subscribed to our newsletter</p>
+                        <button type="button" class="border border-black font-medium px-4 py-2 rounded">Unsubscribe</button>
+                    </div>
+                </section>
+
+                <section class="flex justify-between">
+                    <h1><i class="fa-solid fa-right-from-bracket">Sign out</i></h1>
+                    <h1 class="text-sm text-orange-500 mt-1 text-right font-medium">Delete Account</h1>
+                </section>
+            </form>
+        </section>
+
+    </header>
+</body>
+
+</html>
